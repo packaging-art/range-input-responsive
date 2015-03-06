@@ -8,6 +8,9 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 body, input, textarea {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -28,34 +31,43 @@ img {
 /**
  * Clearfix
  */
-.clearfix:after, .loanOffer:after, .loanDetails:after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both; }
 
-.loanOffer {
-  margin-bottom: 9em;
-  height: 3.75em;
+@media only screen and (min-width: 600px) {
+  body {
+    margin-left: 3em;
+    margin-right: 3em; } }
+.loanTotalWrapper {
   text-align: center;
   position: relative; }
 
 .label {
   text-transform: uppercase;
   font-size: .5em;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-bottom: .8em; }
+
+.loanOfferInnnerContainer {
+  height: 3.75em; }
+
+.loanTotalContainer {
+  width: 12em;
+  display: inline-block;
+  height: inherit;
+  vertical-align: top; }
+
+.loanInfoSectionEmphasis {
+  height: inherit;
+  border: 3px solid lightgray;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
+  padding: .45em .65em .35em; }
 
 .loanInfoSectionInnerContainer {
   position: relative;
   height: 100%; }
-
-.loanTotal {
-  width: 12em;
-  display: inline-block;
-  float: initial;
-  height: inherit;
-  margin-top: 0;
-  vertical-align: top;
-  height: 4.4em; }
 
 .loanAmountInputContainer {
   position: absolute;
@@ -101,66 +113,51 @@ img {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%); }
 
-.loanUpdateButton {
-  width: 10%;
-  height: inherit;
-  float: left;
-  position: relative; }
-
-.loanDetails {
-  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
-  width: 70%;
-  float: left;
-  height: inherit; }
-
-.loanInfoSection, .loanInfoSectionEmphasis {
-  width: 16.66%;
-  float: left;
-  padding: .45em .65em .5em;
-  height: inherit; }
-  .loanInfoSectionEmphasis {
-    border: 3px solid lightgray;
-    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
-    padding: .45em .65em .35em;
-    height: inherit;
-    width: 100%; }
-
-.loanInfoSection + .loanInfoSection, .loanInfoSectionEmphasis + .loanInfoSection, .loanInfoSection + .loanInfoSectionEmphasis, .loanInfoSectionEmphasis + .loanInfoSectionEmphasis {
-  border-left: 1px solid whitesmoke; }
-
-.loanInfo {
-  text-align: right;
-  width: 100%;
-  font-size: .9em;
-  line-height: 1;
-  position: absolute;
-  bottom: 0;
-  right: 0; }
+.large_screen {
+  display: none; }
 
 @media only screen and (min-width: 600px) {
-  .loanOffer {
-    width: 22%;
+  .loanTotalWrapper {
+    width: 25%;
     float: left; }
-
-  .loanTotal {
-    float: left;
-    margin-top: -.425em;
-    width: 100%; }
-
-  .increaseContainer, .decreaseContainer {
-    display: none; }
-
-  .loanAmountInputContainer {
-    width: 100%;
-    bottom: 0;
-    font-size: 1.6em;
-    line-height: 1.3; }
-
-  .loanAmountInputContainer input {
-    border-bottom: 2px solid lightgray;
-    text-align: left; }
 
   .label {
     position: absolute;
     top: 0;
-    left: 0; } }
+    left: 0; }
+
+  .loanOfferInnnerContainer {
+    height: 5.5em; }
+
+  .loanTotalContainer {
+    float: left;
+    margin-top: -.425em;
+    width: 100%; }
+
+  .loanAmountInputContainer {
+    width: 100%;
+    font-size: 1.6em;
+    line-height: 1.3;
+    left: 0;
+    top: auto;
+    right: auto;
+    bottom: .1em;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; }
+
+  .loanAmountInputContainer input {
+    border-bottom: 2px solid lightgray;
+    text-align: left;
+    font-size: 1.1em; }
+
+  .increaseContainer, .decreaseContainer {
+    display: none; }
+
+  .large_screen {
+    display: block; }
+
+  .small_screen {
+    display: none; } }

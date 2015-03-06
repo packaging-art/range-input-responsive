@@ -1,0 +1,52 @@
+@media only screen and (min-width : 600px) {
+
+	.loanTotalWrapper {
+		width: 25%;
+		float: left;
+	}
+		.label {
+			position: absolute;
+			top: 0;
+			left:0;
+		}
+
+		.loanOfferInnnerContainer {
+			height: 5.5em;
+		}
+
+		.loanTotalContainer {
+			float: left;
+			margin-top: -.425em;
+			width: 100%;
+		}
+
+			.loanAmountInputContainer {
+				width: 100%;
+				font-size: 1.6em;
+				line-height: 1.3;
+				left: 0;
+				top: auto;
+				right: auto;
+				bottom: .1em;
+				-webkit-transform: none;
+				-moz-transform: none;
+				-ms-transform: none;
+				-o-transform: none;
+				transform: none; 
+
+			}
+
+				.loanAmountInputContainer input { 
+					border-bottom: 2px solid lightgray;
+					text-align: left;
+					font-size: 1.1em;
+				}
+
+
+	.increaseContainer, .decreaseContainer {
+		display: none;
+	}
+
+	.large_screen {display: block;}
+	.small_screen {display: none;}
+}
