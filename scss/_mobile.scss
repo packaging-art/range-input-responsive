@@ -1,0 +1,35 @@
+@media only screen and (min-width : 600px) {
+
+	.loanOffer {
+		width: 22%;
+		float: left;
+	}
+
+	.loanTotal {
+		float: left;
+		margin-top: -.425em;
+		width: 100%;
+	}
+
+	.increaseContainer, .decreaseContainer {
+		display: none;
+	}
+
+	.loanAmountInputContainer {
+		width: 100%;
+		bottom: 0;
+		font-size: 1.6em;
+		line-height: 1.3;
+	}
+
+	.loanAmountInputContainer input { 
+		border-bottom: 2px solid lightgray;
+		text-align: left;
+	}
+
+	.label {
+		position: absolute;
+		top: 0;
+		left:0;
+	}
+}
