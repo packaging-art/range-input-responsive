@@ -117,7 +117,7 @@ img {
 .large_screen {
   display: none; }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   .loanTotalWrapper {
     width: 20%;
     float: left; }
@@ -218,7 +218,7 @@ img {
   background: #f0f0f0;
   cursor: auto; }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   .loanDetailsWrapper {
     width: 80%;
     float: left;
@@ -253,3 +253,72 @@ img {
   .loanTableWrapper {
     width: 75%;
     float: right; } }
+.contentWrap {
+  width: 90%;
+  margin: auto; }
+
+.inputRangeContainer {
+  margin-left: auto;
+  margin-right: auto; }
+
+.inputRange {
+  height: 15px;
+  border-radius: 3px;
+  position: relative; }
+
+.inputRangeIndicator {
+  height: 2px;
+  background: #bfbfbf;
+  position: relative;
+  margin-bottom: .75em;
+  z-index: -1000;
+  width: 100%; }
+
+.controlSection-maximum .control, .controlSection-minimum .control, .arrowDown, .arrowContainer, .currentAmount {
+  display: none; }
+
+.control_container > div, .control_container a {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle; }
+
+.controlHandle {
+  margin: 0;
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  position: relative;
+  padding: .5em .9em;
+  box-shadow: 0px 0px 6px 2px #e6e6e6;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.controlHandle {
+  margin: 0;
+  height: 3em;
+  width: 3em;
+  border-radius: 1.5em;
+  position: relative; }
+
+.controlHandleContainer {
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+.bar {
+  width: 2px;
+  height: 12px;
+  float: left;
+  background: #50E3C2; }
+
+.bar + .bar {
+  margin-left: 3px; }
