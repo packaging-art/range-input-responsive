@@ -3,17 +3,18 @@
 }
 
 .loanDetailsWrapper {
-	margin-top: 1.5em;
+	margin: 1.5em 0;
 	//box-shadow: 0 0 5px 3px hsla(0,0%,0%,.05);
 	width: 100%;
 	height: inherit;
-	font-size: .8em;
 
 	text-align: center;
 	@extend .clearfix;
 }
 
-
+.loanDetailsInnerWrapper {
+		font-size: .75em;
+}
 
 .loanInfoSection {
 	width: 33.33%;
@@ -34,12 +35,18 @@
 }
 
 
-	
-.loanUpdateButton {
-	width: 10%;
-	height: inherit;
-	float: left;
+.updateButtonWrapper, .loanTableWrapper {
+	width: 100%;
+}
+
+.updateButtonWrapper {
 	position: relative;
+	margin: 2em 0 1.5em;
+
+}
+
+.loanUpdateButton {
+
 }
 
 .button {
@@ -48,14 +55,20 @@
 	color: white;
 	background: #4edfa5;
 	text-transform: uppercase;
-	padding: 1em 1.25em;
-	font-weight: 700;
-	font-size: .55em;
+	padding: 2.2em 2em;
+	font-weight: 900;
+	font-size: .75em;
 	cursor: pointer;
+	width: 100%;
+	height:100%;
+	white-space: nowrap;
 }
 
 .red {
 	background: rgb(255, 0, 58);
+		background: lightgray;
+
+	border-radius: 2px
 }
 
 .button:disabled, .red:disabled {

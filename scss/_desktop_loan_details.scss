@@ -1,9 +1,45 @@
 @media only screen and (min-width : 600px) {
 
+
 	.loanDetailsWrapper {
-		width: 70%;
-		float:left;
-		font-size: .9em;
+		width: 80%;
+		float: left;
+		margin-top: 0;
+		position: relative;
+		height: 5em;
+	}
+
+	.loanDetailsInnerWrapper {
+				font-size: .85em;
+
+	    position: absolute;
+	    top: 50%;
+	    bottom: auto;
+	    -webkit-transform: translateY(-50%);
+	    -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	    -o-transform: translateY(-50%);
+	    transform: translateY(-50%);
+	    width: 100%;
+	}
+
+	.updateButtonWrapper {
+		width: 25%;
+		float: left;
+		margin: 0;
+		text-align: right;
+	}
+		.button {
+			width: 70%;
+			height: 100%;
+			display: inline-block;
+				font-size: .6em;
+
+		}
+
+	.loanTableWrapper {
+		width: 75%;
+		float: right;
 	}
 
 }
