@@ -1,81 +1,71 @@
-.contentWrap {
+.sliderContentWrap {
 	width: 90%;
 	margin: auto;
 }
+
+.controlButtonContainer, .currentAmount, .arrowDown, .arrowContainer {
+	display: none;
+}
+
 .inputRangeContainer {
-	margin-left: auto;
-	margin-right: auto; 
+	position: relative;
 }
 
 .inputRange {
 	height: 15px;
 	border-radius: 3px;
-	position: relative;
-}
-
-.inputRangeIndicator {
-	height: 2px;
-	background: #bfbfbf;
-	position: relative;
-	margin-bottom: .75em; 
-	z-index: -1000;
-	width: 100%; 
-}
-
-.controlSection-maximum .control, .controlSection-minimum .control, .arrowDown, .arrowContainer, .currentAmount {
-	display: none;
-}
-
-.control_container > div, .control_container a {
-	display: inline-block;
-	line-height: 1;
-	vertical-align: middle;
-}
-
-.controlHandle {
-	margin: 0;
-	height: 2em;
-	width: 2em;
-	border-radius: 1em;
 	position: relative; 
-	padding: .5em .9em;
-	box-shadow: 0px 0px 6px 2px #e6e6e6;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	transition: all 0.5s ease;
 }
 
+	.inputRangeIndicator {
+		height: 2px;
+		background: #bfbfbf;
+		margin-bottom: .75em;
+	}
+
+	.amount {
+	  font-size: .75em;
+	  color: lightgray;
+	  z-index: -10; 
+	}
+
+	.amountMinimum {
+		float: left;
+	}
+
+	.amountMaximum {
+		float: right;
+	}
+
+	.rangeSelector {
+		position: absolute;
+		left: 50%;
+		right: auto;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+		background: white;
+		text-align: center;
+		box-shadow: 0px 0px 18px 18px rgba(255, 255, 255, 0.9); 
+		width: 2em;
+		padding: 0;
+	}
 
 	.controlHandle {
-	  margin: 0;
-	  height: 3em;
-	  width: 3em;
-	  border-radius: 1.5em;
-	  position: relative; 
-	}
-	
-	.controlHandleContainer {
-	  position: absolute;
-	  position: absolute;
-	  left: 50%;
-	  top: 50%;
-	  bottom: auto;
-	  right: auto;
-	  -webkit-transform: translateX(-50%) translateY(-50%);
-	  -moz-transform: translateX(-50%) translateY(-50%);
-	  -ms-transform: translateX(-50%) translateY(-50%);
-	  -o-transform: translateX(-50%) translateY(-50%);
-	  transform: translateX(-50%) translateY(-50%); 
+		padding: .5em .9em;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		margin: 0em 1em 0;
+		box-shadow: 0px 0px 6px 2px #e6e6e6;
+		margin: 0;
+
+		height: 2em;
+		width: 2em;
+		border-radius: 1em;
+		position: relative;
 	}
 
 
-
-	.bar {
-	  width: 2px;
-	  height: 12px;
-	  float: left;
-	  background: #50E3C2; }
-	
-	.bar + .bar {
-	  margin-left: 3px;
-	}

@@ -1,0 +1,17 @@
+@media only screen and (min-width : 700px) {
+
+	.sliderContentWrap {
+		width: 90%;
+	}
+
+	.controlButtonContainer, .currentAmount, .arrowDown, .arrowContainer {
+		display: none;
+	}
+
+	.rangeSelector {
+		bottom: -.4em;
+		padding: 0 1.25em;
+		width: 10em;
+	}
+
+}
