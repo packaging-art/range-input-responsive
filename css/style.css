@@ -195,6 +195,17 @@ img {
   position: relative;
   margin: 2em 0 1.5em; }
 
+.loanCaption {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 0.5em;
+  line-height: 1.4;
+  color: dimgray;
+  width: 100%;
+  float: left;
+  text-transform: uppercase;
+  font-weight: 400; }
+
 .button {
   border: none;
   border-radius: 0;
@@ -224,7 +235,8 @@ img {
     float: left;
     margin-top: 0;
     position: relative;
-    height: 5em; }
+    height: 5em;
+    margin-bottom: 0; }
 
   .loanDetailsInnerWrapper {
     font-size: .85em;
@@ -256,7 +268,10 @@ img {
     float: right; }
 
   .lastBorder {
-    border-right: 1px solid #e6e6e6; } }
+    border-right: 1px solid #e6e6e6; }
+
+  .loanCaption {
+    text-align: left; } }
 .sliderContentWrap {
   width: 85%;
   margin: auto; }

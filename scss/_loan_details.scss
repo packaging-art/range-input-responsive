@@ -49,6 +49,18 @@
 
 }
 
+.loanCaption {
+	margin-top: 1em;
+	text-align: center;
+	font-size: 0.5em;
+	line-height: 1.4;
+	color: dimgray;
+	width: 100%;
+	float: left;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
 .button {
 	border: none;
 	border-radius: 0;
@@ -66,7 +78,7 @@
 
 .red {
 	background: rgb(255, 0, 58);
-		background: lightgray;
+	background: lightgray;
 
 	border-radius: 2px
 }
