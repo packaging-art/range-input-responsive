@@ -1,5 +1,5 @@
 .sliderContentWrap {
-	width: 90%;
+	width: 85%;
 	margin: auto;
 }
 
@@ -9,7 +9,15 @@
 
 .inputRangeContainer {
 	position: relative;
+	margin-top: 2em;
 }
+
+	
+.controlSection a,.amountMinimum a,.amountMaximum a {
+		color: #50E3C2;
+	}
+
+
 
 .inputRange {
 	height: 15px;
@@ -20,7 +28,7 @@
 	.inputRangeIndicator {
 		height: 2px;
 		background: #bfbfbf;
-		margin-bottom: .75em;
+		margin-bottom: .25em;
 	}
 
 	.amount {
@@ -51,6 +59,7 @@
 		box-shadow: 0px 0px 18px 18px rgba(255, 255, 255, 0.9); 
 		width: 2em;
 		padding: 0;
+		bottom: -0.1em;
 	}
 
 	.controlHandle {
@@ -58,7 +67,6 @@
 		-webkit-transition: all 0.5s ease;
 		-moz-transition: all 0.5s ease;
 		transition: all 0.5s ease;
-		margin: 0em 1em 0;
 		box-shadow: 0px 0px 6px 2px #e6e6e6;
 		margin: 0;
 
@@ -68,4 +76,31 @@
 		position: relative;
 	}
 
+	.controlHandle:hover {
+		box-shadow: 0px 0px 8px 4px #e0e0e0;
+	}
+
+	.controlHandleContainer {
+	  position: absolute;
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  bottom: auto;
+	  right: auto;
+	  -webkit-transform: translateX(-50%) translateY(-50%);
+	  -moz-transform: translateX(-50%) translateY(-50%);
+	  -ms-transform: translateX(-50%) translateY(-50%);
+	  -o-transform: translateX(-50%) translateY(-50%);
+	  transform: translateX(-50%) translateY(-50%); 
+	}
+	
+	.bar {
+	  width: 2px;
+	  height: 12px;
+	  float: left;
+	  background: #50E3C2; }
+	
+	.bar + .bar {
+	  margin-left: 3px;
+	}
 

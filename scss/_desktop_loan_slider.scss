@@ -1,17 +1,124 @@
 @media only screen and (min-width : 700px) {
 
 	.sliderContentWrap {
-		width: 90%;
+		width: 100%;
 	}
 
 	.controlButtonContainer, .currentAmount, .arrowDown, .arrowContainer {
-		display: none;
+		display: inline-block;
+	}
+
+	.inputRangeContainer {
+		margin-top: 5em;
+	}
+
+	.inputRangeIndicator {
+
+		position: absolute;
+		top: 50%;
+		bottom: auto;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		position: absolute;
+		width: 100%;
+	}
+
+	.controlSection, .amountMinimum, .amountMaximum {
+		position: absolute;
+		top: 50%;
+		bottom: auto;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		background: white;
+		line-height: 1;
+	}
+
+	.controlSection > div, .amountMaximum > div, .amountMinimum > div, .controlSection a, .amountMaximum a, .amountMinimum a {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.amountMinimum {
+		left: 0;
+		padding-right: 2em;
+	}
+
+	.amountMaximum {
+		right: 0;
+		padding-left: 2em;
+	}
+
+	.amountMaximum .amount {
+		margin-right: 1em;
+	}
+
+	.amountMinimum .amount {
+		margin-left: 1em;
+	}
+
+	.amount {
+		font-size: .8em;
 	}
 
 	.rangeSelector {
-		bottom: -.4em;
+		bottom: -.5em;
 		padding: 0 1.25em;
 		width: 10em;
 	}
 
+	.currentAmount {
+		font-size: 1.1em;
+		line-height: 1;
+		font-weight: 500;
+		color: #8c8c8c;
+	}
+
+	.arrowDown {
+		width: 4em;
+		margin: 0 auto .5em;
+	}
+
+	.controlContainer > div, .controlContainer > a {
+		display: inline-block;
+		line-height: 1;
+		vertical-align: middle;
+	}
+
+		.arrow {
+			width: .6em;
+		}
+
+	.controlHandle {
+		margin: 0em 1em 0;
+	}
+
+	.control {
+		width: 1.8em;
+		height: 1.8em;
+		font-weight: 900;
+		line-height: 1;
+		position: relative;
+		-webkit-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		box-shadow: 0px 0px 5px 1px #ededed;
+	}
+
+	.control:hover {
+		box-shadow: 0px 0px 8px 4px #e6e6e6;
+	}
+
+	.controlIcon {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		bottom: auto;
+		right: auto;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		-ms-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+		background: white;
+		font-size: 1.4em;
+	}
 }
