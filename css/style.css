@@ -22,7 +22,8 @@ body {
   /* ignore these this will change for our app */
   margin: 50vh 3% 3em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  -webkit-text-size-adjust: none; }
 
 img {
   max-width: 100%; }
@@ -193,7 +194,7 @@ img {
 
 .updateButtonWrapper {
   position: relative;
-  margin: 2em 0 1.5em; }
+  margin: 3em 0 1.5em; }
 
 .loanCaption {
   margin-top: 1em;
@@ -204,7 +205,8 @@ img {
   width: 100%;
   float: left;
   text-transform: uppercase;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-bottom: 3em; }
 
 .button {
   border: none;
@@ -280,8 +282,7 @@ img {
   display: none; }
 
 .inputRangeContainer {
-  position: relative;
-  margin-top: 2em; }
+  position: relative; }
 
 .controlSection a, .amountMinimum a, .amountMaximum a {
   color: #50E3C2; }
