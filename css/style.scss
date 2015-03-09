@@ -1,8 +1,9 @@
 @import "bourbon", "neat";
 
-@import '../scss/variables';
-@import '../scss/mixins';
-@import '../scss/base';
+@import '../scss/universal/normalize';
+@import '../scss/universal/variables';
+@import '../scss/universal/mixins';
+@import '../scss/universal/base';
 
 @import '../scss/loan_total';
 @import '../scss/desktop_loan_total';
