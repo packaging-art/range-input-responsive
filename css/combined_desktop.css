@@ -113,12 +113,11 @@
 
 .loanDetailsWrapper {
 	margin: 1.5em 0;
-	//box-shadow: 0 0 5px 3px hsla(0,0%,0%,.05);
+	box-shadow: 0 0 5px 3px hsla(0,0%,0%,.05);
 	width: 100%;
 	height: inherit;
 
 	text-align: center;
-	@extend .clearfix;
 }
 
 .loanDetailsInnerWrapper {
