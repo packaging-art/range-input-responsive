@@ -1,0 +1,314 @@
+/* 1. Base Loan Total ------------------------- ------------------------- */
+
+
+.loanTotalWrapper {
+	text-align: center;
+	position: relative;
+	height: 100%;
+	    -webkit-text-size-adjust: none;
+
+}
+
+	.label {
+		text-transform: uppercase;
+		font-size: .5em;
+		font-weight: 700;
+		margin-bottom: .8em;
+		width: 100%;
+	}
+
+	.loanOfferInnnerContainer {
+		height: 3.75em;
+	}
+
+
+	.loanTotalContainer {
+		width: 12em;
+		display: inline-block;
+		height: inherit;
+		vertical-align: top; 
+
+	}
+		.loanInfoSectionEmphasis {
+			height: inherit;
+			border: 3px solid lightgray;
+			box-shadow: 0 0 5px 3px hsla(0,0%,0%,.05);
+			padding: .45em .65em .35em;
+		}
+
+			.loanInfoSectionInnerContainer {
+				position: relative;
+				height: 100%;
+			}
+
+				.loanAmountInputContainer {
+					position: absolute;
+
+					left: 50%;
+					top: 50%;
+					bottom: auto;
+					right: auto;
+					-webkit-transform: translateX(-50%) translateY(-50%);
+					-moz-transform: translateX(-50%) translateY(-50%);
+					-ms-transform: translateX(-50%) translateY(-50%);
+					-o-transform: translateX(-50%) translateY(-50%);
+					transform: translateX(-50%) translateY(-50%); 
+
+					width: 100%;
+					font-size: 1.6em;
+					line-height: 1.3;
+				}
+
+					.loanAmountInputContainer input { 
+							border: none;
+							width: 100%;
+							font-size: .9em;
+							line-height: 1.4;
+							margin: 0;
+							text-align: center;
+					}
+
+
+	.increaseContainer, .decreaseContainer {
+		display: inline-block;
+		height: inherit;
+		width: 3.5em;
+		position: relative;
+	}
+
+	.mobileControlButton {
+		font-size: 1.8em;
+		font-weight: 800;
+		color:  #50E3C2;
+		
+		position: absolute;
+
+		left: 50%;
+		top: 50%;
+		bottom: auto;
+		right: auto;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-ms-transform: translateX(-50%) translateY(-50%);
+		-o-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%); 
+
+	}
+
+	.large_screen {display: none;}
+
+/*End Base Loan Total  */
+
+
+
+
+
+/* 2. Base Loan Details ------------------------- -------------------------  */
+
+.hide {
+	display: none;
+}
+
+.loanInfoSection-x {}
+
+.loanDetailsWrapper {
+	margin: 1.5em 0;
+	//box-shadow: 0 0 5px 3px hsla(0,0%,0%,.05);
+	width: 100%;
+	height: inherit;
+
+	text-align: center;
+	@extend .clearfix;
+}
+
+.loanDetailsInnerWrapper {
+		font-size: .75em;
+}
+
+.loanInfoSection {
+	width: 33.33%;
+	float:left;
+	padding: .25em .65em .2em;
+
+}
+
+.loanInfoSection + .loanInfoSection {
+	border-left: 1px solid hsl(0,0%,90%);
+}
+
+
+.loanInfo {
+	margin-top: 1.1em;
+	font-size: 1.05em;
+	line-height: 1;
+}
+
+
+.updateButtonWrapper, .loanTableWrapper {
+	width: 100%;
+}
+
+.updateButtonWrapper {
+	position: relative;
+	margin: 3em 0 1.5em;
+
+}
+
+.loanUpdateButton {
+
+}
+
+.loanCaption {
+	margin-top: 1em;
+	text-align: center;
+	font-size: 0.5em;
+	line-height: 1.4;
+	color: dimgray;
+	width: 100%;
+	float: left;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 3em;
+}
+
+.button {
+	border: none;
+	border-radius: 0;
+	color: white;
+	background: #4edfa5;
+	text-transform: uppercase;
+	padding: 1.5em 2em;
+	font-weight: 900;
+	font-size: .75em;
+	cursor: pointer;
+	width: 15em;
+	height:100%;
+	white-space: nowrap;
+}
+
+.red {
+	background: rgb(255, 0, 58);
+
+	border-radius: 2px
+}
+
+.button:disabled, .red:disabled {
+	background: #f0f0f0;
+	cursor: auto;
+}
+
+/* END Base Loan Details */
+
+
+
+/* 3. Desktop Loan Total Adjustment ------------------------- -------------------------  */
+
+.loanTotalWrapper {
+		width: 20%;
+		float: left;
+	}
+		.loanTotalWrapper .label {
+			position: absolute;
+			text-align: left;
+			top: 0;
+			left:0;
+		}
+
+		.loanOfferInnnerContainer {
+			height: 100%;
+			height: 5em;
+		}
+
+		.loanTotalContainer {
+			float: left;
+			width: 100%;
+		}
+
+			.loanAmountInputContainer {
+				width: 100%;
+				font-size: 1.6em;
+				line-height: 1.3;
+				left: 0;
+				top: auto;
+				right: auto;
+				bottom: 0em;
+				-webkit-transform: none;
+				-moz-transform: none;
+				-ms-transform: none;
+				-o-transform: none;
+				transform: none; 
+
+			}
+
+				.loanAmountInputContainer input { 
+					border-bottom: 2px solid lightgray;
+					text-align: left;
+					font-size: 1em;
+				}
+
+
+	.increaseContainer, .decreaseContainer {
+		display: none;
+	}
+
+	.large_screen {display: block;}
+	.small_screen {display: none;}
+
+/* END Desktop Loan Total Adjustment */
+
+
+
+/* 4. Desktop Loan Details Adjustment ------------------------- ------------------------- */
+
+
+	.loanDetailsWrapper {
+		width: 80%;
+		float: left;
+		margin-top: 0;
+		position: relative;
+		height: 5em;
+		margin-bottom: 0;
+	}
+
+	.loanDetailsInnerWrapper {
+				font-size: .85em;
+
+	    position: absolute;
+	    top: 50%;
+	    bottom: auto;
+	    -webkit-transform: translateY(-50%);
+	    -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	    -o-transform: translateY(-50%);
+	    transform: translateY(-50%);
+	    width: 100%;
+	}
+
+	.updateButtonWrapper {
+		width: 25%;
+		float: left;
+		margin: 0;
+		text-align: right;
+	}
+		.button {
+			width: 70%;
+			height: 100%;
+			display: inline-block;
+			font-size: .6em;
+			padding: 2.2em 2em;
+		}
+
+	.loanTableWrapper {
+		width: 75%;
+		float: right;
+	}
+
+	.lastBorder {
+		border-right: 1px solid hsl(0,0%,90%);
+	}
+
+	.loanCaption {
+		text-align: left;
+	}
+
+/* END Desktop Loan Details Adjustment */
