@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+
+        <!--  Main Container -->
+            <div class='{style.loanOfferWidget} {style.clearfix}'>
+
+                <!-- Loan Total + Details -->
+
+                <div class='{style.clearfix}'>
+
+                    <!--  Loan Total Section -->
+                    <div class='{style.loanTotalWrapper}'>
+
+                        <div class='{style.label} {style.small_screen}'>
+                            Loan Amount
+                        </div>
+
+                        <div class="{style.loanOfferInnnerContainer}">
+
+                            <div class='{style.decreaseContainer}'>
+                                <g:Button ui:field="decreaseButton" styleName='{style.mobileControlButton}'>-</g:Button>
+                            </div>
+
+                            <div class='{style.loanTotalContainer}'>
+                                <div class='{style.loanInfoSectionEmphasis}'>
+                                    <div class='{style.loanInfoSectionInnerContainer}'>
+                                        <div class='{style.label} {style.large_screen}'>
+                                            Loan Amount
+                                        </div>
+                                        <div class='{style.loanAmountInputContainer}'>
+                                            <g:TextBox ui:field="loanAmountLabel">
+                                                $10,000.00
+                                            </g:TextBox>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='{style.increaseContainer}'>
+                                <g:Button ui:field="increaseButton" styleName='{style.mobileControlButton}'>+</g:Button>
+                            </div>
+
+                        </div>
+
+                        <div class='{style.loanCaption}'>
+                            Type in field above or use the slider<br>
+                            below to adjust loan amount.
+                        </div>
+
+                    </div>
+                    <!-- END Loan Total Section -->
+
+
+
+                    <!-- Loan Details Section -->
+
+                    <div class='{style.loanDetailsWrapper}'>
+
+                        
+                        <!-- Loan Details Innerwrapper  -->
+
+
+                        <div class='{style.loanDetailsInnerWrapper}'>
+
+                            <!-- Loan Table Section -->
+
+                                <div class='{style.loanTableWrapper} {style.clearfix}'>
+
+                                    <div class='{style.loanInfoSection-x} {style.hide}'>
+                                        <div class='{style.loanInfoSectionInnerContainer}'>
+                                            <div class='{style.label}'>
+                                                Grouplend Fee
+                                            </div>
+                                            <g:Label ui:field="loanFeeLabel" styleName='{style.loanInfo}'>
+                                                $95
+                                            </g:Label>
+                                        </div>
+                                    </div>
+
+                                    <div class='{style.loanInfoSection-x} {style.hide}'>
+                                        <div class='{style.loanInfoSectionInnerContainer}'>
+                                            <div class='{style.label}'>
+                                                Net Loan Proceeds
+                                            </div>
+                                            <g:Label ui:field="netLoanProceedsLabel" styleName='{style.loanInfo}'>
+                                                $9,905
+                                            </g:Label>                                     
+                                        </div>
+                                    </div>
+
+
+                                    <div class='{style.loanInfoSection-x} {style.hide}'>
+                                        <div class='{style.loanInfoSectionInnerContainer}'>
+                                            <div class='{style.label}'>
+                                                APR
+                                            </div>
+                                            <g:Label ui:field="aprLabel" styleName='{style.loanInfo}'>
+                                            6.94%
+                                            </g:Label>
+                                        </div>
+                                    </div>
+
+                                    <div class='{style.loanInfoSection}'>
+                                        <div class='{style.loanInfoSectionInnerContainer}'>
+                                            <div class='{style.label}'>
+                                                Monthly Payment
+                                            </div>
+                                            <g:Label ui:field="monthlyPaymentLabel" styleName='{style.loanInfo}'>
+                                            $304.90
+                                            </g:Label>
+                                        </div>
+                                    </div>
+
+                                    <div class='{style.loanInfoSection}'>
+                                        <div class='{style.loanInfoSectionInnerContainer}'>
+                                            <div class='{style.label}'>
+                                                Interest Rate
+                                            </div>
+                                            <g:Label ui:field="interestRateLabel" styleName='{style.loanInfo}'>
+                                            6.15%
+                                        </g:Label>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class='{style.loanInfoSection} {style.lastBorder}'>
+                                        <div class='{style.loanInfoSectionInnerContainer}'>
+                                            <div class='{style.label}'>
+                                                Term of Loan
+                                            </div>
+                                            <div class='{style.loanInfo}'>
+                                                36 months
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            <!-- END of Loan Table Section -->
+
+                            <!-- update Button Section -->
+
+                                <div class='{style.updateButtonWrapper} {style.clearfix}'>
+                                    <div class='{style.loanUpdateButton}'>
+                                       <g:Button styleName="{style.button}" addStyleNames="{style.red}" ui:field="updateButton">Update</g:Button>
+                                    </div>
+                                </div>
+
+                            <!-- END update Button Section -->
+                        </div>  
+                        <!-- ENDLoan Details Innerwrapper  -->
+
+                    </div>
+                    <!-- END Loan Details Section -->
+
+
+                </div>
+
+                <!-- Slider section -->
+
+                <div class='{style.sliderContentWrap}'>
+                    <div class='{style.inputRangeContainer}'>
+                        <g:HTMLPanel styleName="{style.inputRange}" ui:field="inputRange">
+                            
+                            <div class='{style.inputRangeIndicator}'>
+                            </div>
+
+                            <div class='{style.amountMinimum}' ui:field="sectionMin">
+                                <div class='{style.controlButtonContainer}'>
+                                    <g:Anchor ui:field="minusButton">
+                                        <div class='{style.control}'>
+                                            <span class='{style.controlIcon}'>-</span>
+                                        </div>
+                                    </g:Anchor>
+                                </div>
+                                <g:Label styleName='{style.amount}' ui:field="minLabel">
+                                    $1,000
+                                </g:Label>
+                            </div>
+
+                            <div class='{style.amountMaximum}' ui:field="sectionMax">
+                                <g:Label styleName='{style.amount}' ui:field="maxLabel">
+                                    $30,000
+                                </g:Label>
+                                <div class='{style.controlButtonContainer}'>
+                                    <g:Anchor ui:field="plusButton">
+                                        <div class='{style.control}'>
+                                            <span class='{style.controlIcon}'>+</span>
+                                        </div>
+                                    </g:Anchor>
+                                </div>
+                            </div>
+                        </g:HTMLPanel>
+
+                        <div class='{style.rangeSelector}' ui:field="slider">
+
+                            <g:Label styleName="{style.currentAmount}" ui:field="amountLabel">
+                                $14,500
+                            </g:Label>
+                            <div class="{style.arrowDown}">
+                                <img src='/img/arrow_down.png'>
+                            </div>
+                            <div class="{style.controlContainer}">
+                                <div class='{style.arrowContainer}'>
+                                    <g:Anchor ui:field="leftButton">
+                                        <div class='{style.arrow} {style.decrease}'>
+                                            <img src='../images/arrow_left.png' />
+                                        </div>
+                                    </g:Anchor>
+                                </div>
+                                <g:HTMLPanel styleName='{style.controlHandle}' ui:field="sliderKnob">
+                                    <div class='{style.controlHandleContainer}'>
+                                        <span class='{style.bar}'></span>
+                                        <span class='{style.bar}'></span>
+                                        <span class='{style.bar}'></span>
+                                    </div>
+                                </g:HTMLPanel>
+                                <div class='{style.arrowContainer}'>
+                                    <g:Anchor ui:field="rightButton">
+                                        <div class='{style.arrow} {style.increase}'>
+                                            <img src='../images/arrow_right.png' />
+                                        </div>
+                                    </g:Anchor>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End of Slider Section -->
+
+            </div>
+        <!-- END Main Container -->
+
+    </body>
+</html>

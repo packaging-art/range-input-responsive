@@ -549,7 +549,7 @@ img {
   width: 3.5em;
   position: relative; }
 
-.mobileControl {
+.mobileControlButton {
   font-size: 1.8em;
   font-weight: 800;
   color: #50E3C2;
@@ -673,7 +673,6 @@ img {
 
 .red {
   background: #ff003a;
-  background: lightgray;
   border-radius: 2px; }
 
 .button:disabled, .red:disabled {
