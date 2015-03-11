@@ -67,99 +67,116 @@
 
                     <div class='{style.loanDetailsWrapper}'>
 
+                        <!-- Loan Details Content Wrapper  -->
+
+                        <div class='{style.loanDetailsContentWrapper}'>
                         
-                        <!-- Loan Details Innerwrapper  -->
+                            <!-- Loan Details Innerwrapper  -->
 
+                            <div class='{style.loanDetailsInnerWrapper}'>
 
-                        <div class='{style.loanDetailsInnerWrapper}'>
+                                <!-- Loan Table Section -->
 
-                            <!-- Loan Table Section -->
+                                    <div class='{style.loanTableWrapper} {style.clearfix}'>
 
-                                <div class='{style.loanTableWrapper} {style.clearfix}'>
+                                        <div class='{style.clearfix}'>
 
-                                    <div class='{style.loanInfoSection-x} {style.hide}'>
-                                        <div class='{style.loanInfoSectionInnerContainer}'>
-                                            <div class='{style.label}'>
-                                                Grouplend Fee
+                                            <div class='{style.loanInfoSection-x} {style.hide}'>
+                                                <div class='{style.loanInfoSectionInnerContainer}'>
+                                                    <div class='{style.label}'>
+                                                        Grouplend Fee
+                                                    </div>
+                                                    <g:Label ui:field="loanFeeLabel" styleName='{style.loanInfo}'>
+                                                        $95
+                                                    </g:Label>
+                                                </div>
                                             </div>
-                                            <g:Label ui:field="loanFeeLabel" styleName='{style.loanInfo}'>
-                                                $95
-                                            </g:Label>
+
+                                            <div class='{style.loanInfoSection-x} {style.hide}'>
+                                                <div class='{style.loanInfoSectionInnerContainer}'>
+                                                    <div class='{style.label}'>
+                                                        Net Loan Proceeds
+                                                    </div>
+                                                    <g:Label ui:field="netLoanProceedsLabel" styleName='{style.loanInfo}'>
+                                                        $9,905
+                                                    </g:Label>                                     
+                                                </div>
+                                            </div>
+
+
+                                            <div class='{style.loanInfoSection-x} {style.hide}'>
+                                                <div class='{style.loanInfoSectionInnerContainer}'>
+                                                    <div class='{style.label}'>
+                                                        APR
+                                                    </div>
+                                                    <g:Label ui:field="aprLabel" styleName='{style.loanInfo}'>
+                                                    6.94%
+                                                    </g:Label>
+                                                </div>
+                                            </div>
+
+                                            <div class='{style.loanInfoSection}'>
+                                                <div class='{style.loanInfoSectionInnerContainer}'>
+                                                    <div class='{style.label}'>
+                                                        Monthly Payment
+                                                    </div>
+                                                    <g:Label ui:field="monthlyPaymentLabel" styleName='{style.loanInfo}'>
+                                                    $304.90
+                                                    </g:Label>
+                                                </div>
+                                            </div>
+
+                                            <div class='{style.loanInfoSection}'>
+                                                <div class='{style.loanInfoSectionInnerContainer}'>
+                                                    <div class='{style.label}'>
+                                                        Interest Rate
+                                                    </div>
+                                                    <g:Label ui:field="interestRateLabel" styleName='{style.loanInfo}'>
+                                                    6.15%
+                                                </g:Label>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class='{style.loanInfoSection} {style.lastBorder}'>
+                                                <div class='{style.loanInfoSectionInnerContainer}'>
+                                                    <div class='{style.label}'>
+                                                        Term of Loan
+                                                    </div>
+                                                    <div class='{style.loanInfo}'>
+                                                        36 months
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class='{style.captionWrapper} {style.small_screen}'>
+                                            *The annual percentage rate (APR) is compounded monthly,<br>not in advance. APR includes all scheduled fees and related charges.
+                                        </div>
+
+                                    </div>
+                                <!-- END of Loan Table Section -->
+
+                                <!-- update Button Section -->
+
+                                    <div class='{style.updateButtonWrapper} {style.clearfix}'>
+                                        <div class='{style.loanUpdateButton}'>
+                                           <g:Button styleName="{style.button}" addStyleNames="{style.red}" ui:field="updateButton">Update</g:Button>
                                         </div>
                                     </div>
 
-                                    <div class='{style.loanInfoSection-x} {style.hide}'>
-                                        <div class='{style.loanInfoSectionInnerContainer}'>
-                                            <div class='{style.label}'>
-                                                Net Loan Proceeds
-                                            </div>
-                                            <g:Label ui:field="netLoanProceedsLabel" styleName='{style.loanInfo}'>
-                                                $9,905
-                                            </g:Label>                                     
-                                        </div>
-                                    </div>
+                                <!-- END update Button Section -->
+                            </div>  
+                            <!-- ENDLoan Details Innerwrapper  -->
+                        </div>
+                        <!-- Loan Details Content Wrapper  -->
 
-
-                                    <div class='{style.loanInfoSection-x} {style.hide}'>
-                                        <div class='{style.loanInfoSectionInnerContainer}'>
-                                            <div class='{style.label}'>
-                                                APR
-                                            </div>
-                                            <g:Label ui:field="aprLabel" styleName='{style.loanInfo}'>
-                                            6.94%
-                                            </g:Label>
-                                        </div>
-                                    </div>
-
-                                    <div class='{style.loanInfoSection}'>
-                                        <div class='{style.loanInfoSectionInnerContainer}'>
-                                            <div class='{style.label}'>
-                                                Monthly Payment
-                                            </div>
-                                            <g:Label ui:field="monthlyPaymentLabel" styleName='{style.loanInfo}'>
-                                            $304.90
-                                            </g:Label>
-                                        </div>
-                                    </div>
-
-                                    <div class='{style.loanInfoSection}'>
-                                        <div class='{style.loanInfoSectionInnerContainer}'>
-                                            <div class='{style.label}'>
-                                                Interest Rate
-                                            </div>
-                                            <g:Label ui:field="interestRateLabel" styleName='{style.loanInfo}'>
-                                            6.15%
-                                        </g:Label>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class='{style.loanInfoSection} {style.lastBorder}'>
-                                        <div class='{style.loanInfoSectionInnerContainer}'>
-                                            <div class='{style.label}'>
-                                                Term of Loan
-                                            </div>
-                                            <div class='{style.loanInfo}'>
-                                                36 months
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            <!-- END of Loan Table Section -->
-
-                            <!-- update Button Section -->
-
-                                <div class='{style.updateButtonWrapper} {style.clearfix}'>
-                                    <div class='{style.loanUpdateButton}'>
-                                       <g:Button styleName="{style.button}" addStyleNames="{style.red}" ui:field="updateButton">Update</g:Button>
-                                    </div>
-                                </div>
-
-                            <!-- END update Button Section -->
-                        </div>  
-                        <!-- ENDLoan Details Innerwrapper  -->
+                        <!-- APR Caption Wrapper  -->
+                        <div class='{style.captionWrapper} {style.large_screen}'>
+                            *The annual percentage rate (APR) is compounded monthly,<br>not in advance. APR includes all scheduled fees and related charges.
+                        </div>
+                        <!-- END APR Caption Wrapper  -->
 
                     </div>
                     <!-- END Loan Details Section -->
