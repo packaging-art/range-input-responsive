@@ -1,3 +1,23 @@
+html {
+       font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  /* EDIT: new syntax for FF 15+ */
+  -ms-font-feature-settings: "liga";
+  -o-font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }

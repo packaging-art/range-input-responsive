@@ -456,12 +456,31 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  /* EDIT: new syntax for FF 15+ */
+  -ms-font-feature-settings: "liga";
+  -o-font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased; }
+
 *, *:before, *:after {
   box-sizing: inherit; }
 
 body, input, textarea, button {
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5;
   font-weight: 400;
   color: #333; }
