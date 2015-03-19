@@ -1,0 +1,65 @@
+button, .button {
+	background: white;
+	border: 1px solid BASE_BUTTON_COLOR;
+	border-radius: none;
+	color: BASE_BUTTON_TEXT_COLOR;
+	font-size: 1em;
+	line-height: 1.4;
+	position: relative;
+}
+
+.buttonInnerText {
+	width: 100%;
+	font-size: .95em;
+}
+
+.buttonCentered .buttonInnerText {
+position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);;
+}
+
+.buttonEmphasis {
+	background: #4edfa5;
+}
+
+.buttonError {
+	background: red;
+}
+
+.buttonNoEmphasis {
+	background: lightgray;
+}
+.buttonDisabled {
+	opacity: .5;
+
+}
+
+button, .button {
+	border: none;
+	border-radius: 0;
+	color: white;
+	text-transform: uppercase;
+	height: 4em;
+	font-weight: 700;
+	cursor: pointer;
+	width: 100%;
+}
+
+button + button {
+	margin-top: .5em;
+}
+		/*.button {
+			width: 70%;
+			height: 100%;
+			display: inline-block;
+			font-size: .6em;
+			padding: 2.2em 2em;
+		}*/

@@ -14,7 +14,7 @@
 }
 
 .loanDetailsInnerWrapper {
-		font-size: .75em;
+	font-size: .75em;
 }
 
 .loanInfoSection {
@@ -46,9 +46,11 @@
 
 }
 
-.loanUpdateButton {
 
-}
+.updateButtonWrapper button {
+		font-size: .75em;
+		height: 6em;
+	}
 
 .loanCaption {
 	margin-top: 1em;
@@ -63,20 +65,7 @@
 	margin-bottom: .75em;
 }
 
-.button {
-	border: none;
-	border-radius: 0;
-	color: white;
-	background: #4edfa5;
-	text-transform: uppercase;
-	padding: 1.5em 2em;
-	font-weight: 900;
-	font-size: .75em;
-	cursor: pointer;
-	width: 15em;
-	height:100%;
-	white-space: nowrap;
-}
+
 
 .captionWrapper {
 	text-align: center;
